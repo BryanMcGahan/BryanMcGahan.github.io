@@ -120,6 +120,7 @@
         px-8
         bg-white/60
         backdrop-blur-2xl
+        border-2
         border-white
         rounded-xl
         dark:bg-black/80 dark:border-black
