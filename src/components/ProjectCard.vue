@@ -26,7 +26,7 @@
         bottom-0
         backdrop-blur-sm
         bg-zinc-300/60
-        dark:bg-black/80
+        dark:bg-zinc-800/80
         rounded-xl
         p-4
       "

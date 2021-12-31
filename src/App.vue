@@ -1,7 +1,18 @@
 
 <template>
-  <NavBar></NavBar>
-  <section class="sm:pt-20 px-4 sm:px-10 pb-64 relative" id="home">
+  <NavBar class="motion-safe:animate-fadeIn"></NavBar>
+  <section
+    class="
+      sm:pt-20
+      px-4
+      sm:px-10
+      pb-64
+      relative
+      motion-safe:animate-fadeIn
+      scroll
+    "
+    id="home"
+  >
     <div class="container mx-auto flex flex-col md:flex-row items-center">
       <div
         class="
@@ -108,10 +119,16 @@
       </svg>
     </div>
   </section>
-  <section id="about" class="px-4 pb-64 sm:px-10 pt-48 relative">
+  <section
+    id="about"
+    class="px-4 pb-64 sm:px-10 pt-48 relative motion-safe:animate-fadeIn scroll"
+  >
     <AboutCard></AboutCard>
   </section>
-  <section class="px-4 pb-64 sm:px-10 pt-20 relative" id="projects">
+  <section
+    class="px-4 pb-64 sm:px-10 pt-20 relative motion-safe:animate-fadeIn scroll"
+    id="projects"
+  >
     <div
       class="
         container
@@ -120,8 +137,7 @@
         px-8
         bg-white/60
         backdrop-blur-2xl
-        border-2
-        border-white
+        border-2 border-white
         rounded-xl
         dark:bg-black/80 dark:border-black
         drop-shadow-xl
@@ -159,6 +175,7 @@
       rounded-xl
       dark:bg-black/80 dark:border-black
       drop-shadow-xl
+      motion-safe:animate-fadeIn
     "
   >
     <h1 class="dark:text-zinc-500 font-semibold">Create by Bryan McGahan</h1>
@@ -166,16 +183,20 @@
 </template>
 
 <script>
+
 import NavBar from "./components/NavBar.vue";
 import ProjectCard from "./components/ProjectCard.vue";
-import AboutCard from "./components/AboutCard.vue"
+import AboutCard from "./components/AboutCard.vue";
+import { watch } from "@vue/runtime-core";
 export default {
   components: {
     NavBar,
     ProjectCard,
     AboutCard,
   },
-  methods: {},
+
+  methods: {
+  },
 };
 </script>
 

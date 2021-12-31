@@ -33,7 +33,7 @@
         </svg>
         <p class="text-xl font-bold dark:text-zinc-100">Bryan</p>
       </span>
-      <div class="hidden sm:flex space-x-8">
+      <nav class="hidden sm:flex space-x-8">
         <div>
           <a
             class="text-sm font-semibold hover:text-primary dark:text-zinc-100"
@@ -62,7 +62,7 @@
             >Resume</a
           >
         </div>
-      </div>
+      </nav>
       <div class="flex sm:hidden p-1 z-20">
         <button class="rounded-md" @click="showMobile = !showMobile">
           <svg
@@ -80,11 +80,12 @@
       </div>
     </div>
     <div
-      class="h-screen mt-20"
+      class="h-screen mt-20 motion-safe:animate-fadeIn"
       id="mobile-menu"
-      :class="showMobile ? 'flex' : 'hidden'"
+      :class="(showMobile ? 'flex' : 'hidden')"
+      @click="showMobile = !showMobile"
     >
-      <div class="flex flex-col justify-start w-full">
+      <nav class="flex flex-col justify-start w-full">
         <div>
           <a class="" href="#home">
             <button
@@ -100,8 +101,8 @@
                 duration-300
                 ease-in
                 hover:shadow-lg hover:-translate-y-2
+                dark:hover:text-zinc-800
               "
-              @click="showMobile = !showMobile"
             >
               Home
             </button>
@@ -125,8 +126,8 @@
                 duration-300
                 ease-in
                 hover:shadow-lg hover:-translate-y-2
+                dark:hover:text-zinc-800
               "
-              @click="showMobile = !showMobile"
             >
               About
             </button>
@@ -150,8 +151,8 @@
                 duration-300
                 ease-in
                 hover:shadow-lg hover:-translate-y-2
+                dark:hover:text-zinc-800
               "
-              @click="showMobile = !showMobile"
             >
               Projects
             </button>
@@ -171,19 +172,19 @@
                 hover:bg-zinc-50
                 text-zinc-800 text-lg
                 dark:text-zinc-100
+                dark:hover:text-zinc-800
                 font-semibold
                 duration-300
                 ease-in
                 hover:shadow-lg
                 hover:-translate-y-2
               "
-              @click="showMobile = !showMobile"
             >
               Resume
             </button>
           </a>
         </div>
-      </div>
+      </nav>
     </div>
   </header>
 </template>
@@ -195,11 +196,13 @@ export default {
   data() {
     return {
       showMobile: false,
+      isOpen: false
     };
   },
 
   methods:{
-  }
+  },
+
 };
 </script>
 
