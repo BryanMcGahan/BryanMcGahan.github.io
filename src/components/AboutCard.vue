@@ -3,8 +3,8 @@
     class="
       container
       mx-auto
+      border
       dark:bg-black/80
-      backdrop-blur-2xl
       rounded-xl
       dark:border-black
       bg-white/60
@@ -16,6 +16,7 @@
       lg:items-center
       justify-center
       lg:justify-evenly
+      motion-safe:animate-fadeIn scroll
     "
   >
     <div class="w-3/4 lg:w-1/4 mb-20 mt-20 z-[-1] flex justify-center">

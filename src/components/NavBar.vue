@@ -3,7 +3,8 @@
     class="
       bg-white/60
       backdrop-blur-2xl
-      border-[.5]
+      border-white
+      border-b
       dark:border-black
       dark:bg-black/60
       rounded-b-sm
@@ -15,6 +16,7 @@
       w-screen
       z-10
       fixed
+      motion-safe:animate-fadeIn 
     "
   >
     <div class="container mx-auto flex justify-between items-center">
@@ -58,7 +60,7 @@
         <div>
           <a
             class="text-sm font-semibold hover:text-primary dark:text-zinc-100"
-            href="#"
+            href="/Resume_new.pdf#toolbar=0"
             >Resume</a
           >
         </div>
@@ -161,7 +163,7 @@
         <div>
           <a
             class="text-sm font-semibold hover:text-black dark:text-zinc-100"
-            href="#"
+            href="/Resume_new.pdf#toolbar=0"
           >
             <button
               class="

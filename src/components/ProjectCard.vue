@@ -25,8 +25,9 @@
         right-0
         bottom-0
         backdrop-blur-sm
-        bg-zinc-300/60
-        dark:bg-zinc-800/80
+        border
+        border-primary
+        bg-primary/80
         rounded-xl
         p-4
       "
@@ -73,8 +74,9 @@
     </div>
     <div
       class="
-        bg-white/60
-        dark:bg-black/80
+        w-full
+        bg-zinc-100
+        dark:bg-zinc-800
         backdrop-blur-sm
         absolute
         bottom-0
@@ -82,8 +84,8 @@
         right-0
         opacity-100
         sm:opacity-0
-        h-16
-        rounded-xl
+        h-16 
+        rounded-md
         group-hover:opacity-100
         ease-in-out
         duration-500

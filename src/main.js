@@ -9,9 +9,11 @@ watch: {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           console.log(entry.isIntersecting);
+          entry.target.classList.add("backdrop-blur-2xl")
           entry.target.classList.add("motion-safe:animate-fadeIn");
         } else {
           entry.target.classList.remove("motion-safe:animate-fadeIn");
+          entry.target.classList.remove("backdrop-blur-2xl")
         }
       });
     };

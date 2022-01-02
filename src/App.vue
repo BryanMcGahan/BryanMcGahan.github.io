@@ -1,18 +1,7 @@
 
 <template>
   <NavBar class="motion-safe:animate-fadeIn"></NavBar>
-  <section
-    class="
-      sm:pt-20
-      px-4
-      sm:px-10
-      pb-64
-      relative
-      motion-safe:animate-fadeIn
-      scroll
-    "
-    id="home"
-  >
+  <section class="sm:pt-20 px-4 sm:px-10 pb-64 relative" id="home">
     <div class="container mx-auto flex flex-col md:flex-row items-center">
       <div
         class="
@@ -26,6 +15,8 @@
           md:py-0 md:px-0
           bg-white/60
           backdrop-blur-2xl
+          border
+          md:border-0
           border-white
           rounded-xl
           dark:bg-black/70 dark:border-black
@@ -35,6 +26,8 @@
           lg:mt-0
           text-center
           md:text-left
+          motion-safe:animate-fadeIn
+          scroll
         "
       >
         <p class="text-md font-medium text-gray-800 dark:text-zinc-300 pb-3">
@@ -121,12 +114,12 @@
   </section>
   <section
     id="about"
-    class="px-4 pb-64 sm:px-10 pt-48 relative motion-safe:animate-fadeIn scroll"
+    class="px-4 pb-64 sm:px-10 pt-48 relative"
   >
     <AboutCard></AboutCard>
   </section>
   <section
-    class="px-4 pb-64 sm:px-10 pt-20 relative motion-safe:animate-fadeIn scroll"
+    class="px-4 pb-64 sm:px-10 pt-20 relative"
     id="projects"
   >
     <div
@@ -136,11 +129,11 @@
         py-20
         px-8
         bg-white/60
-        backdrop-blur-2xl
-        border-2 border-white
+        border border-white
         rounded-xl
-        dark:bg-black/80 dark:border-black
+        dark:bg-black/60 dark:border-black
         drop-shadow-xl
+         motion-safe:animate-fadeIn scroll
       "
     >
       <div class="flex flex-col lg:flex-row justify-center items-center pb-5">
@@ -172,10 +165,12 @@
       bg-white/60
       backdrop-blur-2xl
       border-white
+      border
       rounded-xl
       dark:bg-black/80 dark:border-black
       drop-shadow-xl
       motion-safe:animate-fadeIn
+      scroll
     "
   >
     <h1 class="dark:text-zinc-500 font-semibold">Create by Bryan McGahan</h1>
@@ -183,7 +178,6 @@
 </template>
 
 <script>
-
 import NavBar from "./components/NavBar.vue";
 import ProjectCard from "./components/ProjectCard.vue";
 import AboutCard from "./components/AboutCard.vue";
@@ -195,8 +189,7 @@ export default {
     AboutCard,
   },
 
-  methods: {
-  },
+  methods: {},
 };
 </script>
 

@@ -20,7 +20,7 @@ module.exports = {
       },
 
       animation: {
-        fadeIn:"fadeIn 2s ease-in forwards"
+        fadeIn:"fadeIn 1.5s ease-in forwards"
       },
       keyframes:{
         fadeIn: {
@@ -30,9 +30,9 @@ module.exports = {
       },
     },
 
-    variants: {
-      animation: ["motion-safe"]
-    },
+    // variants: {
+    //   animation: ["motion-safe"]
+    // },
   
   },
   plugins: [],
