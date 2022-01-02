@@ -28,11 +28,12 @@ module.exports = {
           "100%": {opacity: 1},
         }
       },
+
+      screens:{
+        'ultrawide':"2000px"
+      }
     },
 
-    // variants: {
-    //   animation: ["motion-safe"]
-    // },
   
   },
   plugins: [],

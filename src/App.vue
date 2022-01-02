@@ -60,13 +60,19 @@
         <img
           class="
             w-full
-            md:w-3/4
+            md:w-5/6
+            lg:w-4/6
+            xl:w-1/2
+            2xl:w-2/6
             top-48
             sm:top-36
             fixed
             md:-right-32 md:-top-80
-            lg:-top-[34rem]
-            xl:-top-[42rem]
+            lg:-top-[24rem]
+            xl:-top-[20rem]
+            2xl:-top-[16rem]
+            ultrawide:-top-96
+            2xl:-right-0
             z-[-1]
             dark:hidden
           "
@@ -77,8 +83,11 @@
           class="
             hidden
             dark:flex
-            w-3/4
-            md:w-1/2
+            w-full
+            md:w-5/6
+            lg:w-4/6
+            xl:w-1/2
+            2xl:w-2/6
             top-72
             fixed
             md:right-5 md:-top-20
@@ -112,16 +121,10 @@
       </svg>
     </div>
   </section>
-  <section
-    id="about"
-    class="px-4 pb-64 sm:px-10 pt-48 relative"
-  >
+  <section id="about" class="px-4 pb-64 sm:px-10 pt-48 relative">
     <AboutCard></AboutCard>
   </section>
-  <section
-    class="px-4 pb-64 sm:px-10 pt-20 relative"
-    id="projects"
-  >
+  <section class="px-4 pb-64 sm:px-10 pt-20 relative" id="projects">
     <div
       class="
         container
@@ -133,7 +136,8 @@
         rounded-xl
         dark:bg-black/60 dark:border-black
         drop-shadow-xl
-         motion-safe:animate-fadeIn scroll
+        motion-safe:animate-fadeIn
+        scroll
       "
     >
       <div class="flex flex-col lg:flex-row justify-center items-center pb-5">
@@ -164,8 +168,7 @@
       mt-32
       bg-white/60
       backdrop-blur-2xl
-      border-white
-      border
+      border-white border
       rounded-xl
       dark:bg-black/80 dark:border-black
       drop-shadow-xl
