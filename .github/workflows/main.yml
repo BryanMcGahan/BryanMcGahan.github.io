@@ -10,6 +10,5 @@ jobs:
   build:
     runs-on: bwmmwb
     steps:
-      - run: cd ${{ github.workspace }}
       - run: npm ci
       - run: npm run build
