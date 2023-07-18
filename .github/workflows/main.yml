@@ -1,4 +1,4 @@
-name: test
+name: deploy
 
 on: workflow_dispatch
 
@@ -6,4 +6,6 @@ jobs:
   test:
     runs-on: bwmmwb
     steps:
-      - run: echo pwd
+      - uses: actions/checkout@v3
+      - run: npm ci
+      - run: npm run build
