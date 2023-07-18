@@ -1,0 +1,9 @@
+name: test
+
+on: workflow_dispatch
+
+jobs:
+  test:
+    runs-on: bwmmwb
+    steps:
+      - run: echo pwd
