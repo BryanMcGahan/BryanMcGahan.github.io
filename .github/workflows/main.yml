@@ -3,10 +3,13 @@ name: deploy
 on: workflow_dispatch
 
 jobs:
-  test:
+  checkout:
     runs-on: bwmmwb
     steps:
       - uses: actions/checkout@v3
-      - run: cd $GITHUB_WORKPLACE
+  build:
+    runs-on: bwmmwb
+    steps:
+      - run: cd ${{ github.workspace }}
       - run: npm ci
       - run: npm run build
