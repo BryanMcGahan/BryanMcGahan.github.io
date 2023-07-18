@@ -7,8 +7,9 @@ jobs:
     runs-on: bwmmwb
     steps:
       - uses: actions/checkout@v3
-  build:
-    runs-on: bwmmwb
-    steps:
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 16
       - run: npm ci
       - run: npm run build
+      
