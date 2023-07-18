@@ -7,5 +7,6 @@ jobs:
     runs-on: bwmmwb
     steps:
       - uses: actions/checkout@v3
+      - run: cd $GITHUB_WORKPLACE
       - run: npm ci
       - run: npm run build
